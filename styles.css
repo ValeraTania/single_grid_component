@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap');
+
+:root{
+--cyan: hsl(179, 62%, 43%);
+--brightYellow: hsl(71, 73%, 54%);
+--lightGray: hsl(204, 43%, 93%);
+--grayishBlue: hsl(218, 22%, 67%);
+}
+
+body{
+    font-size: 16px;
+    background-color: var(--lightGray);
+    font-family: "Karla", sans-serif;
+}
+ .container{
+    height: 100vh;
+   
+ }
+
+
+.top{
+    background-color: #fff;
+}
+
+.top>p{
+    color: var(--grayishBlue);
+}
+h5{
+    color: var(--cyan);
+    font-weight: 700;
+    
+}
+
+h6{
+    color: var(--brightYellow);
+    font-weight: 700;
+}
+
+.left{
+    background-color: var(--cyan);
+    color: #fff;  
+    border-bottom-left-radius: .375rem;
+}
+
+
+.price>p{
+    color: var(--lightGray);
+    opacity: 70%;
+   
+}
+
+button{
+    background-color: var(--brightYellow);
+    color: #fff;
+}
+
+.right{
+    background-color: var(--cyan);
+    opacity: 80%;
+    color: #fff;
+    border-bottom-right-radius: .375rem;
+}
+
+.left>h6, .right>h6{
+    color: #fff;
+}
+.attribution { font-size: 11px; 
+    text-align: center; 
+}
+
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+    /*--------MOBILE---------*/
+    @media screen and (min-width:375px) and (max-width:750px) {
+        .left{
+            border-radius: 0;
+        }
+        
+        .right{
+            border-bottom-left-radius: .375rem;
+        }
+    }
